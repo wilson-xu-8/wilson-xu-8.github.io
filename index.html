@@ -14,7 +14,7 @@ body {
 
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
+  float: center;
   width: 33%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
@@ -26,6 +26,11 @@ body {
   display: table;
   clear: both;
 }
+
+.table {
+
+}
+
 </style>
 </head>
 <body>
@@ -36,147 +41,118 @@ body {
 
 
 <h2><br>This is my past experience:</h2>
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
+
+<table style="width:100%" cellspacing="70">
+    <tr>
+      <th style="width:35%; text-align:center">Experience</th>
+      <th style="width:45%; text-align:left">Description</th>
+      <th style="width:20%; text-align:center">Times</th>
+    </tr>
+    <tr>
+      <td style="text-align:center">
+        <b>Software Engineer Intern at Five9</b><br>
         <img src="images/five9.png" alt="Five9 Image Not Found" style="width:450px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Software Engineer Intern at Five9</h3>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>May 2023-August 2023</h3>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/intel.png" alt="Intel Image Not Found" style="width:400px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Software Engineer Intern at Intel</h3>
-        <p>
+      </td>
+      <td></td>
+      <td style="text-align:center">May 2023 - August 2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">
+            <b>Software Engineer Intern at Intel</b><br>
+            <img src="images/intel.png" alt="Intel Image Not Found" style="width:400px;height:250px;">
+        </td>
+        <td>
             Optimized device database management in FPGA design software platform with Python program by analyzing statistics of user designs, retrieving and processing millions of design properties from internal databases to improve data storage efficiency.<br>
             Wrote Python program to generate large-scale, multi-layer FPGA designs, supporting user-specified circuit parameters in JSON format, for simulation and performance testing of internal device databases.<br>
             Streamlined debugging process of logic design software compiler tool for external customers, by revising Makefiles of the compilation process while running regression tests to ensure compatibility with existing repository.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>June 2022-September 2022</h3>
-    </div>    
-</div>
+        </td>
+        <td style="text-align:center">June 2022 - September 2022</td>
+      </tr>      
+  </table>
 
-<h2><br>This are my past projects:</h2>
+  <h2><br>This are my past projects:</h2>
 
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/ecb.png" alt="ECB Image Not Found" style="width:400px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>End-to-End Secured Filesystem</h3>
-        <p>
+  <table style="width:100%" cellspacing="70">
+    <tr>
+      <th style="width:35%; text-align:center">Project</th>
+      <th style="width:45%; text-align:left">Description</th>
+      <th style="width:20%; text-align:center">Times</th>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>End-to-End Secured Filesystem</b><br>
+            <img src="images/ecb.png" alt="ECB Image Not Found" style="width:400px;height:250px;">
+        </td>
+        <td>
             Constructed file system in Golang with secure data sharing features across many concurrent users, each with multiple devices<br>
-            Upheld IND-CPA confidentiality and EU-CPA integrity requirements for file invitations, password management schemes, select file storage and appending functionality, etc.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Spring 2023</h3>
-    </div>    
-</div>
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/thread.png" alt="Thread Image Not Found" style="width:400px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Pintos Operating System</h3>
-        <p>
+            Upheld IND-CPA confidentiality and EU-CPA integrity requirements for file invitations, password management schemes, select file storage and appending functionality, etc.</td>
+        <td style="text-align:center">Spring 2023</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Pintos Operating System</b><br>
+            <img src="images/thread.png" alt="Thread Image Not Found" style="width:400px;height:250px;">
+        </td>
+        <td>
             Designed and implemented an operating system in C with a team.<br>
             Supported all fundamental operations such as process executions, forking, system calls, variable data sizes, priority scheduling, and memory management.<br>
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Spring 2023</h3>
-    </div>
-</div>
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/neurel_net.png" alt="Neurel Network Image Not Found" style="width:400px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Handwritten Digit Classification w/ Machine Learning</h3>
-        <p>
+        </td>
+        <td style="text-align:center">Spring 2023</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Handwritten Digit Classification with Machine Learning</b><br>
+            <img src="images/neurel_net.png" alt="Neurel Network Image Not Found" style="width:400px;height:250px;">
+        </td>
+        <td>
             Produced a handwritten digit classification neural network model that successfully classifies whether a digit from the MNIST dataset is a “3” or a “9” with 98% accuracy.<br>
             Developed back-propagation/gradient descent formula for this model from scratch, performing matrix computations with Numpy library and visualizing model progress with Matplotlib.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Fall 2022</h3>
-    </div>
-</div>
-
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/caltask.png" alt="Caltask Image Not Found" style="width:475px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Caltask: Web Development Productivity Tool</h3>
-        <p>
+        </td>
+        <td style="text-align:center">Fall 2022</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Caltask: Web Development Productivity Tool</b><br>
+            <img src="images/caltask.png" alt="Caltask Image Not Found" style="width:475px;height:250px;">
+        </td>
+        <td>
             Created a workload and assignment manager with HTML/CSS and JS w/ team of three.<br>
             Added the ability to add, edit, and remove assignments from a task list. <br>
             Embedded Google Maps widgets to display directions towards common study areas.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Spring 2022</h3>
-    </div>
-</div>
-
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/matmul.png" alt="Matmul Image Not Found" style="width:450px;height:150px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Numc: Numpy Optimization</h3>
-        <p>
+        </td>
+        <td style="text-align:center">Spring 2022</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Numc: Numpy Optimization</b><br>
+            <img src="images/matmul.png" alt="Matmul Image Not Found" style="width:450px;height:150px;">
+        </td>
+        <td>
             Programmed a matrix calculator in C, supporting features such as adding, multiplying, and exponentiation functions, achieving speedups of up to 700x.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Fall 2021</h3>
-    </div>
-</div>
-
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/gitlet.png" alt="Gitlet Image Not Found" style="width:550px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Gitlet: Version Control</h3>
-        <p>
+        </td>
+        <td style="text-align:center">Fall 2021</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Gitlet: Version Control</b><br>
+            <img src="images/gitlet.png" alt="Gitlet Image Not Found" style="width:550px;height:250px;">
+        </td>
+        <td>
             Designed and produced a version control system emulating Git, with Java.<br>
-            Supported commands such as add, commit, merge, checkout with custom data storage classes and utilized data structures for efficient file tracking.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Spring 2021</h3>
-    </div>
-</div>
-
-<div class="row">
-    <div class="column" style="background-color:#ffffff;">
-        <img src="images/sent_bias.png" alt="Sentiment Bias Image Not Found" style="width:400px;height:250px;">
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Bias Detection via Sentiment Analysis (Data Science Society)</h3>
-        <p>
+            Supported commands such as add, commit, merge, checkout with custom data storage classes and utilized data structures for efficient file tracking.</td>
+        <td style="text-align:center">Spring 2021</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Bias Detection via Sentiment Analysis</b><br>
+            <img src="images/sent_bias.png" alt="Sentiment Bias Image Not Found" style="width:400px;height:250px;">
+        </td>
+        <td>
             Analyzed real-world text data in a Python Jupyter Notebook in a team, published Medium article with results: tinyurl.com/k10iqmb6.<br>
             Integrated NLP libraries (NLTK, scikit-learn) to measure political bias in news articles.
-        </p>
-    </div>
-    <div class="column" style="background-color:#ffffff;">
-        <h3>Fall 2020</h3>
-    </div>
-</div>
+        <td style="text-align:center">Fall 2020</td>
+    </tr>
+  </table>
 
 
 <h2><br>Here is my resume:</h2>
