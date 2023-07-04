@@ -7,198 +7,200 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
 }
-
-.container {
-  max-width: 100%;
-  padding: 10px;
+* {
   box-sizing: border-box;
 }
+
+/* table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+}
+
+td, th {
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+}
+
+th {
+    background-color: blue;
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+} */
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pdf-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust this value as needed */
+    }
+
+    .pdf-container object {
+      width: 70%; /* Adjust this value as needed */
+      height: 100%; /* Adjust this value as needed */
+    }
 
 .center-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-.pdf-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.pdf-container object {
-  width: 100%;
-  height: 100%;
 }
 
 </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>Hi, I'm Wilson, a computer science student at UC Berkeley</h1>
-  <img src="images/cal.jpeg" alt="Berkeley Image Not Found" class="center-image">
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;Hi, I'm Wilson, a computer science student at UC Berkeley</h1>
+<img src="images/cal.jpeg" alt="Berkeley Image Not Found" style="width:350px;height:250px;" class="center-image">
 
-  <h2>This is my past experience:</h2>
 
-  <div class="table-container">
-    <table>
-      <tr>
-        <td>
-          <b>Software Engineer Intern at Five9</b><br>
-          <img src="images/five9.png" alt="Five9 Image Not Found" class="center-image">
-        </td>
-        <td>
-          May 2023 - August 2023
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Software Engineer Intern at Intel</b><br>
-          <img src="images/intel.png" alt="Intel Image Not Found" class="center-image">
-        </td>
-        <td>
-          Optimized device database management in FPGA design software platform with Python program by analyzing statistics of user designs, retrieving and processing millions of design properties from internal databases to improve data storage efficiency.<br>
-          Wrote Python program to generate large-scale, multi-layer FPGA designs, supporting user-specified circuit parameters in JSON format, for simulation and performance testing of internal device databases.<br>
-          Streamlined debugging process of logic design software compiler tool for external customers, by revising Makefiles of the compilation process while running regression tests to ensure compatibility with existing repository.
-        </td>
-        <td>
-          June 2022 - September 2022
-        </td>
-      </tr>
-    </table>
-  </div>
+<h2><br>&emsp;&emsp;&emsp;&emsp;&emsp;This is my past experience:</h2>
 
-  <h2>This are my past projects:</h2>
+<table style="width:80%" cellspacing="50">
+    <!-- <tr>
+      <th style="width:25%; text-align:center"><strong style="font-size: 28px;">Experience</strong></th>
+      <th style="width:35%; text-align:left"><strong style="font-size: 28px;">Description</strong></th>
+      <th style="width:15%; text-align:center"><strong style="font-size: 28px;">Times</strong></th>
+    </tr> -->
+    <tr>
+      <td style="text-align:center">
+        <b>Software Engineer Intern at Five9</b><br>
+        <img src="images/five9.png" alt="Five9 Image Not Found" style="width:450px;height:250px;">
+      </td>
+      <td></td>
+      <td style="text-align:center">May 2023 - August 2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">
+            <b>Software Engineer Intern at Intel</b><br>
+            <img src="images/intel.png" alt="Intel Image Not Found" style="width:400px;height:250px;">
+        </td>
+        <td>
+            Optimized device database management in FPGA design software platform with Python program by analyzing statistics of user designs, retrieving and processing millions of design properties from internal databases to improve data storage efficiency.<br>
+            Wrote Python program to generate large-scale, multi-layer FPGA designs, supporting user-specified circuit parameters in JSON format, for simulation and performance testing of internal device databases.<br>
+            Streamlined debugging process of logic design software compiler tool for external customers, by revising Makefiles of the compilation process while running regression tests to ensure compatibility with existing repository.
+        </td>
+        <td style="text-align:center">June 2022 - September 2022</td>
+      </tr>      
+  </table>
 
-  <div class="table-container">
-    <table>
-      <tr>
-        <td>
-          <b>End-to-End Secured Filesystem</b><br>
-          <img src="images/ecb.png" alt="ECB Image Not Found" class="center-image">
+  <h2><br>&emsp;&emsp;&emsp;&emsp;&emsp;This are my past projects:</h2>
+
+  <table style="width:80%" cellspacing="50">
+    <!-- <tr>
+      <th style="width:25%; text-align:center"><strong style="font-size: 28px;">Project</strong></th>
+      <th style="width:35%; text-align:left"><strong style="font-size: 28px;">Description</strong></th>
+      <th style="width:15%; text-align:center"><strong style="font-size: 28px;">Times</strong></th>
+    </tr> -->
+    <tr> 
+        <td style="text-align:center">
+            <b>End-to-End Secured Filesystem</b><br>
+            <img src="images/ecb.png" alt="ECB Image Not Found" style="width:400px;height:250px;">
         </td>
         <td>
-          Constructed a file system in Golang with secure data sharing features across concurrent users with multiple devices<br>
-          Utilized RSA encryption, symmetric-key cryptography, HMACs, digital signatures to uphold IND-CPA confidentiality and EU-CPA integrity requirements for file invitations, password management schemes, and select file storage functionality within a Datastore
+            Constructed a file system in Golang with secure data sharing features across concurrent users with multiple devices<br>
+            Utilized RSA encryption, symmetric-key cryptography, HMACs, digital signatures to uphold IND-CPA confidentiality and EU-CPA integrity requirements for file invitations, password management schemes, and select file storage functionality within a Datastore
+            <td style="text-align:center">Spring 2023</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Pintos Operating System</b><br>
+            <img src="images/thread.png" alt="Thread Image Not Found" style="width:400px;height:250px;">
         </td>
         <td>
-          Spring 2023
+            Designed and implemented an operating system in C with a team.<br>
+            Supported all fundamental operations such as process executions, forking, system calls, variable data sizes, priority scheduling, and memory management.<br>
         </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Pintos Operating System</b><br>
-          <img src="images/thread.png" alt="Thread Image Not Found" class="center-image">
-        </td>
-        <td>
-          Designed and implemented an operating system in C with a team.<br>
-          Supported all fundamental operations such as process executions, forking, system calls, variable data sizes, priority scheduling, and memory management.
+        <td style="text-align:center">Spring 2023</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Handwritten Digit Classification with Machine Learning</b><br>
+            <img src="images/neurel_net.png" alt="Neurel Network Image Not Found" style="width:400px;height:250px;">
         </td>
         <td>
-          Spring 2023
+            Produced a handwritten digit classification neural network model that successfully classifies whether a digit from the MNIST dataset is a “3” or a “9” with 98% accuracy.<br>
+            Developed back-propagation/gradient descent formula for this model from scratch, performing matrix computations with Numpy library and visualizing model progress with Matplotlib.
         </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Handwritten Digit Classification with Machine Learning</b><br>
-          <img src="images/neurel_net.png" alt="Neurel Network Image Not Found" class="center-image">
-        </td>
-        <td>
-          Produced a handwritten digit classification neural network model that successfully classifies whether a digit from the MNIST dataset is a “3” or a “9” with 98% accuracy.<br>
-          Developed back-propagation/gradient descent formula for this model from scratch, performing matrix computations with Numpy library and visualizing model progress with Matplotlib.
+        <td style="text-align:center">Fall 2022</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Caltask: Web Development Productivity Tool</b><br>
+            <img src="images/caltask.png" alt="Caltask Image Not Found" style="width:475px;height:250px;">
         </td>
         <td>
-          Fall 2022
+            Created a workload and assignment manager with HTML/CSS and JS w/ team of three.<br>
+            Added the ability to add, edit, and remove assignments from a task list. <br>
+            Embedded Google Maps widgets to display directions towards common study areas.
         </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Caltask: Web Development Productivity Tool</b><br>
-          <img src="images/caltask.png" alt="Caltask Image Not Found" class="center-image">
-        </td>
-        <td>
-          Created a workload and assignment manager with HTML/CSS and JS w/ team of three.<br>
-          Added the ability to add, edit, and remove assignments from a task list.<br>
-          Embedded Google Maps widgets to display directions towards common study areas.
+        <td style="text-align:center">Spring 2022</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Numc: Numpy Optimization</b><br>
+            <img src="images/matmul.png" alt="Matmul Image Not Found" style="width:450px;height:150px;">
         </td>
         <td>
-          Spring 2022
+            Programmed a matrix calculator in C, supporting features such as adding, multiplying, and exponentiation functions, achieving speedups of up to 700x.
         </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Numc: Numpy Optimization</b><br>
-          <img src="images/matmul.png" alt="Matmul Image Not Found" class="center-image">
-        </td>
-        <td>
-          Programmed a matrix calculator in C, supporting features such as adding, multiplying, and exponentiation functions, achieving speedups of up to 700x.
+        <td style="text-align:center">Fall 2021</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Gitlet: Version Control</b><br>
+            <img src="images/gitlet.png" alt="Gitlet Image Not Found" style="width:550px;height:250px;">
         </td>
         <td>
-          Fall 2021
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Gitlet: Version Control</b><br>
-          <img src="images/gitlet.png" alt="Gitlet Image Not Found" class="center-image">
-        </td>
-        <td>
-          Designed and produced a version control system emulating Git, with Java.<br>
-          Supported commands such as add, commit, merge, checkout with custom data storage classes and utilized data structures for efficient file tracking.
+            Designed and produced a version control system emulating Git, with Java.<br>
+            Supported commands such as add, commit, merge, checkout with custom data storage classes and utilized data structures for efficient file tracking.</td>
+        <td style="text-align:center">Spring 2021</td>
+    </tr>
+    <tr> 
+        <td style="text-align:center">
+            <b>Bias Detection via Sentiment Analysis</b><br>
+            <img src="images/sent_bias.png" alt="Sentiment Bias Image Not Found" style="width:400px;height:250px;">
         </td>
         <td>
-          Spring 2021
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <b>Bias Detection via Sentiment Analysis</b><br>
-          <img src="images/sent_bias.png" alt="Sentiment Bias Image Not Found" class="center-image">
-        </td>
-        <td>
-          Analyzed real-world text data in a Python Jupyter Notebook in a team, published Medium article with results: tinyurl.com/k10iqmb6.<br>
-          Integrated NLP libraries (NLTK, scikit-learn) to measure political bias in news articles.
-        </td>
-        <td>
-          Fall 2020
-        </td>
-      </tr>
-    </table>
-  
-    <h2><br>&emsp;&emsp;&emsp;&emsp;&emsp;Here is my resume:</h2>
-  
+            Analyzed real-world text data in a Python Jupyter Notebook in a team, published Medium article with results: tinyurl.com/k10iqmb6.<br>
+            Integrated NLP libraries (NLTK, scikit-learn) to measure political bias in news articles.
+        <td style="text-align:center">Fall 2020</td>
+    </tr>
+  </table>
+
+
+<h2><br>&emsp;&emsp;&emsp;&emsp;&emsp;Here is my resume:</h2>
+<!-- <embed src="Wilson_Xu_Resume SU_24 NG.pdf" type="application/pdf" width="70%" height="1080px" text-align="center"> -->
+
     <div class="pdf-container">
-      <object data="Wilson_Xu_Resume SU_24 NG.pdf" type="application/pdf" aria-label="Embedded PDF" width="100%" height="500">
-        PDF cannot be displayed.
-      </object>
+        <object data="Wilson_Xu_Resume SU_24 NG.pdf" type="application/pdf" aria-label="Embedded PDF" width = "70%">
+          PDF cannot be displayed.
+        </object>
     </div>
-  
-  </body>
-  </html>
+
+</body>
+</html>
