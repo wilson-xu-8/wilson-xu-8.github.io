@@ -48,7 +48,7 @@
       width: 60%;
       border-collapse: collapse;
       max-width: 100%;
-      /* padding: 50px; */
+      padding-bottom: 80px;
     }
 
     td,
@@ -58,7 +58,7 @@
       /* border-top: solid black 1px; */
       font-size: 25px;
       border-radius: 15px;
-      padding-bottom: 80px;
+      padding-bottom: 100px;
       /* border: 1px solid black; */
 
     }
@@ -84,24 +84,36 @@
         display: flex;
         flex-direction: column;
         border-radius: 15px;
-        border-spacing: 50px;
+        border-spacing: 10px;
         border-collapse: separate;
+        padding-bottom: 40px;
       }
 
-      th,
+      th {
+        display: block;
+        width: 100%;
+        /* border-radius: 15px; */
+        font-size: 16px;
+        padding-bottom: 50px;
+      }
+
       td {
         display: block;
         width: 100%;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         font-size: 16px;
+        padding-bottom: 10px;
+
       }
 
-      td::before {
+      td::after {
         content: "";
         display: inline-block;
         /* width: 0px; */
         /* Adjust the margin width as needed */
       }
+
+
     }
 
 
